@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="聂玉东">
+    <title>相册</title>
+    <!-- 引入脚本文件 -->
+    <script src="scripts/libs/jquery.js"></script>
+    <script src="scripts/libs/fancybox/jquery.fancybox.js"></script>
+    <script src="scripts/libs/fancybox/helpers/jquery.fancybox-buttons.js"></script>
+    <script src="scripts/libs/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+    <!-- 引入css样式 -->
+    <link rel="stylesheet" href="scripts/libs/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="scripts/libs/fancybox/helpers/jquery.fancybox-buttons.css">
+    <link rel="stylesheet" href="scripts/libs/fancybox/helpers/jquery.fancybox-thumbs.css">
+    <style>
+        html {
+            height: 100%
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            /* border: 3px solid #FF3333; */
+            background-image: url(love/35.jpg);
+            background-size: 100%;
+            overflow: hidden;
+        }
+
+        .xc div {
+            width: 100px;
+            height: 100px;
+            border: 10px solid snow;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .xc div a {
+            display: block;
+            width: 100px;
+            height: 100px;
+            text-indent: -100px;
+            overflow: hidden;
+        }
+
+        .xc div:hover {
+            transform: scale(1.5) !important;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="xc">
+        <div style="background-image: url(love/smile/0.jpg)">
+            <a href="love/0.jpg" rel="grounp">0</a>
+        </div>
+        <div style="background-image: url(love/smile/1.jpg)">
+            <a href="love/1.jpg" rel="grounp">1</a>
+        </div>
+        <div style="background-image: url(love/smile/2.jpg)">
+            <a href="love/2.jpg" rel="grounp">2</a>
+        </div>
+        <div style="background-image: url(love/smile/3.jpg)">
+            <a href="love/3.jpg" rel="grounp">3</a>
+        </div>
+        <div style="background-image: url(love/smile/4.jpg)">
+            <a href="love/4.jpg" rel="grounp">4</a>
+        </div>
+        <div style="background-image: url(love/smile/5.jpg)">
+            <a href="love/5.jpg" rel="grounp">5</a>
+        </div>
+        <div style="background-image: url(love/smile/6.jpg)">
+            <a href="love/6.jpg" rel="grounp">6</a>
+        </div>
+        <div style="background-image: url(love/smile/7.jpg)">
+            <a href="love/7.jpg" rel="grounp">7</a>
+        </div>
+        <div style="background-image: url(love/smile/8.jpg)">
+            <a href="love/8.jpg" rel="grounp">8</a>
+        </div>
+        <div style="background-image: url(love/smile/9.jpg)">
+            <a href="love/9.jpg" rel="grounp">9</a>
+        </div>
+        <div style="background-image: url(love/smile/10.jpg)">
+            <a href="love/10.jpg" rel="grounp">10</a>
+        </div>
+        <div style="background-image: url(love/smile/11.jpg)">
+            <a href="love/11.jpg" rel="grounp">11</a>
+        </div>
+        <div style="background-image: url(love/smile/12.jpg)">
+            <a href="love/12.jpg" rel="grounp">12</a>
+        </div>
+        <div style="background-image: url(love/smile/13.jpg)">
+            <a href="love/13.jpg" rel="grounp">13</a>
+        </div>
+        <div style="background-image: url(love/smile/14.jpg)">
+            <a href="love/14.jpg" rel="grounp">14</a>
+        </div>
+        <div style="background-image: url(love/smile/15.jpg)">
+            <a href="love/15.jpg" rel="grounp">14</a>
+        </div>
+        <div style="background-image: url(love/smile/16.jpg)">
+            <a href="love/16.jpg" rel="grounp">16</a>
+        </div>
+        <div style="background-image: url(love/smile/17.jpg)">
+            <a href="love/17.jpg" rel="grounp">17</a>
+        </div>
+        <div style="background-image: url(love/smile/18.jpg)">
+            <a href="love/18.jpg" rel="grounp">18</a>
+        </div>
+        <div style="background-image: url(love/smile/19.jpg)">
+            <a href="love/19.jpg" rel="grounp">19</a>
+        </div>
+        <div style="background-image: url(love/smile/20.jpg)">
+            <a href="love/20.jpg" rel="grounp">20</a>
+        </div>
+        <div style="background-image: url(love/smile/21.jpg)">
+            <a href="love/21.jpg" rel="grounp">21</a>
+        </div>
+        <div style="background-image: url(love/smile/22.jpg)">
+            <a href="love/22.jpg" rel="grounp">22</a>
+        </div>
+        <div style="background-image: url(love/smile/23.jpg)">
+            <a href="love/23.jpg" rel="grounp">23</a>
+        </div>
+        <div style="background-image: url(love/smile/24.jpg)">
+            <a href="love/24.jpg" rel="grounp">24</a>
+        </div>
+        <div style="background-image: url(love/smile/25.jpg)">
+            <a href="love/25.jpg" rel="grounp">25</a>
+        </div>
+        <div style="background-image: url(love/smile/26.jpg)">
+            <a href="love/26.jpg" rel="grounp">26</a>
+        </div>
+        <div style="background-image: url(love/smile/27.jpg)">
+            <a href="love/27.jpg" rel="grounp">27</a>
+        </div>
+        <div style="background-image: url(love/smile/28.jpg)">
+            <a href="love/28.jpg" rel="grounp">28</a>
+        </div>
+        <div style="background-image: url(love/smile/29.jpg)">
+            <a href="love/29.jpg" rel="grounp">29</a>
+        </div>
+        <div style="background-image: url(love/smile/30.jpg)">
+            <a href="love/30.jpg" rel="grounp">30</a>
+        </div>
+        <div style="background-image: url(love/smile/31.jpg)">
+            <a href="love/31.jpg" rel="grounp">31</a>
+        </div>
+        <div style="background-image: url(love/smile/32.jpg)">
+            <a href="love/32.jpg" rel="grounp">32</a>
+        </div>
+        <div style="background-image: url(love/smile/33.jpg)">
+            <a href="love/33.jpg" rel="grounp">33</a>
+        </div>
+    </div>
+    <script>
+        function showPicture() {
+            var w = $("body").width();
+            var h = $("body").height();
+            var centerX = w / 2;
+            var centerY = h / 2;
+            $(".xc div").each(function () {
+                var left = Math.random() * centerX + centerX / 2;
+                var top = Math.random() * centerY + centerY / 2;
+                var rotate = Math.random() * 160 - 80;
+                $(this).css({
+                    position: "absolute",
+                    left: left,
+                    top: top,
+                    transform: "rotate(" + rotate + "deg)"
+                })
+            })
+        }
+        showPicture();
+        $(window).resize(function () {
+            showPicture();
+        })
+        $(".xc div a").fancybox({
+            autoPlay:true,
+            openEffect: 'elastic',
+            closeEffect: 'elastic',
+            helpers: {
+                buttons: {},
+                title: { type: 'inside' },
+                thumbs: { alwaysCenter: true }
+            },
+            beforeLoad: function () {
+                this.title = $(this.element).text();
+            }
+
+        });
+    </script>
+</body>
+
+</html>
